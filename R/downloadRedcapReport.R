@@ -6,6 +6,8 @@
 #' @param redcapUrl The URL of the REDCap API.
 #' @param redcapReportId The ID of the REDCap report to retrieve.
 #' @return A tibble containing the contents of the REDCap report.
+#' @examples
+#' downloadRedcapReport(redcapTokenName = "6189879441F5C29A25245880677488BF", redcapUrl = "https://redcap.emory.edu/api/", redcapReportId = 46524)
 #' @export
 downloadRedcapReport <- function(redcapTokenName, redcapUrl, redcapReportId) {
   library(httr)
