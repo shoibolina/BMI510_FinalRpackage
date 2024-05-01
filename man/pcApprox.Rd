@@ -18,3 +18,9 @@ The approximation of the data based on the specified number of principal compone
 Returns an approximation to the data based on a specified number of principal components.
 The approximation is rescaled and centered to match the original data.
 }
+\examples{
+# Example 1: Approximating a matrix with 3 principal components
+set.seed(123)
+data_matrix <- matrix(rnorm(100), nrow = 10)
+approx_matrix <- pcApprox(data_matrix, npc = 3)
+}

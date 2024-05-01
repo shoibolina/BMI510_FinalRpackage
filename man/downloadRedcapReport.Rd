@@ -19,3 +19,6 @@ A tibble containing the contents of the REDCap report.
 \description{
 This function retrieves a REDCap report using the provided API token, URL, and report ID.
 }
+\examples{
+downloadRedcapReport(redcapTokenName = "6189879441F5C29A25245880677488BF", redcapUrl = "https://redcap.emory.edu/api/", redcapReportId = 46524)
+}

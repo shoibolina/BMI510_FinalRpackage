@@ -16,3 +16,7 @@ The maximum likelihood estimate of parameter p.
 Given a vector of binary outcomes, calculates the parameter p that maximizes
 the log-likelihood of the data under the assumption of a Bernoulli distribution.
 }
+\examples{
+data <- c(1, 0, 0, 0, 1, 1, 1)
+logLikBernoulli(data)
+}

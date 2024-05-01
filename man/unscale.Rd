@@ -7,11 +7,15 @@
 unscale(x)
 }
 \arguments{
-\item{x}{A numeric vector.}
+\item{x}{A numeric vector that has been centered and scaled.}
 }
 \value{
-The unscaled vector.
+The unscaled and uncentered vector.
 }
 \description{
 Takes a vector that has been put through scaling and reverses the centering/scaling, if any.
+}
+\examples{
+scaled_vector <- scale(c(1, 2, 3, 4, 5))
+unscaled_vector <- unscale(scaled_vector)
 }

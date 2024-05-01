@@ -15,3 +15,12 @@ The tibble with standardized variable names.
 \description{
 Title: Standardize variable names
 }
+\examples{
+# Example 1: Standardize variable names in a tibble
+library(tibble)
+data <- tibble("First Name" = c("Trey", "Lina"),
+               "Last Name" = c("Travis", "Kaushik"),
+               "Age" = c(22, 23))
+clean_data <- standardizeNames(data)
+print(clean_data)
+}

@@ -18,3 +18,10 @@ The minimum sample size needed for a t-test.
 This function is a wrapper around `pwr::pwr.t2n.test` that calculates the minimum sample size
 needed for a t-test of the null hypothesis with specified power and significance level.
 }
+\examples{
+set.seed(123)
+sample_data1 <- rnorm(50)
+sample_data2 <- rnorm(100)
+minimumN(sample_data1, sample_data2)
+#' @export
+}
