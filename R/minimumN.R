@@ -6,7 +6,12 @@
 #' @param x1 A numeric vector representing the first sample.
 #' @param x2 A numeric vector representing the second sample (optional).
 #' @return The minimum sample size needed for a t-test.
-#' @export
+#' @examples
+#' set.seed(123)
+#' sample_data1 <- rnorm(50)
+#' sample_data2 <- rnorm(100)
+#' minimumN(sample_data1, sample_data2)
+#' #' @export
 minimumN <- function(x1, x2 = NULL) {
   library(pwr)
 

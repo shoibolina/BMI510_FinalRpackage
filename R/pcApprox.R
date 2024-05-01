@@ -6,6 +6,11 @@
 #' @param x A numeric vector or matrix.
 #' @param npc Number of principal components to use.
 #' @return The approximation of the data based on the specified number of principal components.
+#' @examples
+#' # Example 1: Approximating a matrix with 3 principal components
+#' set.seed(123)
+#' data_matrix <- matrix(rnorm(100), nrow = 10)
+#' approx_matrix <- pcApprox(data_matrix, npc = 3)
 #' @export
 pcApprox <- function(x, npc) {
   pca <- prcomp(x)
