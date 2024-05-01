@@ -2,7 +2,8 @@
 Contains R package containing .R and .Rd files for each function, along with all other required submissions.
 
 Each .R file is saved as the name of the functions.
-logLikBernoulli.R file: logLikBernoulli = function(data) Write a function that takes a vector like data = c(1,0,0,0,1,1,1,) and calculates the parameter p that maximizes the log-likelihood log(P(p|data)). Use a grid-based search with p in steps of 0.001.
+<ol>
+<li>logLikBernoulli.R file: logLikBernoulli = function(data) Write a function that takes a vector like data = c(1,0,0,0,1,1,1,) and calculates the parameter p that maximizes the log-likelihood log(P(p|data)). Use a grid-based search with p in steps of 0.001.
 survCurv.R file: survCurv = function(status,time) Write a function that takes a numerical vector status and a numerical vector time , and calculates and plots a survival curve S(t).
 unscale.R file: unscale = function(x) : Write a function that takes a vector that has been put through scale and reverses the centering/scaling, if any.
 pcApprox.R file: pcApprox = function(x, npc) : Write a function that returns an approximation to the data x based on npc PCs.
@@ -12,3 +13,4 @@ downloadRedcapReport.R: downloadRedcapReport = function(redcapTokenName,redcapUr
                                 uses Sys.getenv() to read an API token called redcapTokenName from the users’ .REnviron file.
                                 queries redcapUrl to return the Redcap Report redcapReportId. (Notice these are the data from our simulated stroke study, now nicely and securely hosted on RedCap.)
                                 returns the contents as a tibble.
+</ol>
